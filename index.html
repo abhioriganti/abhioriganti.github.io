@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Abhishek Rithik Origanti - Data Scientist & ML Engineer | University of Maryland">
+<title>Abhishek Rithik Origanti | Data Scientist</title>
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome 6 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<!-- Google Fonts: Inter + Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/grayscale.css" rel="stylesheet">
+</head>
+
+<!-- BODY -->
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#hero">
+  <img src="img/Me.png" alt="Abhishek Rithik Origanti" style="width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid var(--primary,#6366f1);">
+</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center gap-1">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item ms-2">
+          <a class="btn btn-primary btn-sm px-3 py-2" href="https://drive.google.com/file/d/1_4ckxSK504YEf3kE95d0c5k4mqIY25uK/view?usp=sharing" target="_blank">
+            <i class="fas fa-file-alt me-1"></i>Resume
+          </a>
+        </li>
+        <li class="nav-item ms-1">
+          <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <i class="fas fa-moon" id="themeIcon"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ===================== HERO ===================== -->
+<section id="hero" class="hero-section">
+  <div class="hero-bg-blob"></div>
+  <div class="hero-bg-blob-2"></div>
+  <canvas id="heroCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+  <div class="container">
+    <div class="row align-items-center min-vh-100">
+
+      <!-- Text Column -->
+      <div class="col-lg-7 hero-text-col order-2 order-lg-1">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">
+          Abhishek Rithik<br>
+          <span class="text-gradient">Origanti</span>
+        </h1>
+        <p class="hero-role">
+          <span class="role-line"></span>
+          Aspiring Data Engineer &amp; Analyst
+        </p>
+        <p class="hero-description">
+          Masters student in Data Science at the University of Maryland, College Park.
+          Passionate about turning raw data into real-world impact from real-time
+          pipelines to deep learning models and generative AI.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary btn-hero">View Projects</a>
+          <a href="#contact" class="btn btn-outline-primary btn-hero">Get In Touch</a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/abhioriganti" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/abhishek-rithik-origanti/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:origanti@umd.edu" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+
+      </div>
+
+      <!-- Photo Column -->
+      <div class="col-lg-5 hero-photo-col text-center order-1 order-lg-2 mb-5 mb-lg-0">
+        <div class="profile-photo-wrapper">
+          <img src="img/abhishekrithikoriganti.png" alt="Abhishek Rithik Origanti" class="profile-photo" style="width:420px; height:420px;">
+          <div class="profile-badge">
+            <i class="fas fa-graduation-cap"></i>
+            <span>UMD · College Park</span>
+          </div>
+          <div class="profile-ring"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about" class="section-light">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 class="section-title">About Me</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <p class="about-text">
+          I'm a data science professional with a background in Computer Science Engineering
+          (AI &amp; ML specialization) from SRM University, now completing my Masters at the
+          University of Maryland. With hands-on experience in data engineering, pipeline development,
+          and analytics, I'm passionate about building efficient data systems and translating
+          complex datasets into clear, actionable insights.
+        </p>
+        <p class="about-text">
+          My current research focus is <strong>Scalable Data Engineering &amp; Pipeline Optimization</strong> exploring how modern orchestration frameworks and cloud-native architectures can maximize throughput, reliability, and observability in large-scale data workflows. I've won a
+          <strong>Best Paper Award</strong> at an international conference and ranked in the top 10 out of
+          2,500 participants in a national Computer Vision hackathon.
+        </p>
+        <div class="d-flex gap-3 flex-wrap mt-4">
+          <a href="https://drive.google.com/file/d/1_4ckxSK504YEf3kE95d0c5k4mqIY25uK/view?usp=sharing" target="_blank" class="btn btn-primary">
+            <i class="fas fa-file-pdf me-2"></i>View Resume
+          </a>
+          <a href="https://www.linkedin.com/in/abhishek-rithik-origanti/" target="_blank" class="btn btn-outline-primary">
+            <i class="fab fa-linkedin me-2"></i>LinkedIn
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+
+        <!-- Education Cards with Logos -->
+        <div class="edu-section-label">Education</div>
+        <div class="edu-cards">
+
+          <!-- UMD -->
+          <div class="edu-card">
+            <div class="edu-logo-wrap">
+              <img
+                src="img/UMD_Logo.jpg"
+                alt="University of Maryland"
+                class="edu-logo-img"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="edu-logo-initials" style="display:none;background:#E03A3E">UMD</div>
+            </div>
+            <div class="edu-details">
+              <h6>Masters in Data Science</h6>
+              <p class="edu-school">University of Maryland, College Park</p>
+              <div class="edu-meta-row">
+                <span class="edu-year"><i class="fas fa-calendar-alt me-1"></i>2024 – 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SRM University -->
+          <div class="edu-card">
+            <div class="edu-logo-wrap">
+              <img
+                src="img/SRM_Logo.jpg"
+                alt="SRM University"
+                class="edu-logo-img"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="edu-logo-initials" style="display:none;background:#003087">SRM</div>
+            </div>
+            <div class="edu-details">
+              <h6>B.Tech — CS (AI &amp; ML Specialization)</h6>
+              <p class="edu-school">SRM University</p>
+              <div class="edu-meta-row">
+                <span class="edu-year"><i class="fas fa-calendar-alt me-1"></i>2020 – 2024</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.edu-cards -->
+
+        <!-- Other info cards -->
+        <div class="info-cards-stack mt-3">
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-trophy"></i></div>
+            <div>
+              <h6>Best Paper Award · ICCTSD-2024</h6>
+              <p>Efficient Deepfake Image Detection Using Dense CNN Architecture</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h6>Location</h6>
+              <p>College Park, MD, USA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== PROJECTS ===================== -->
+<section id="projects" class="section-white">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 class="section-title">Projects</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle">
+        A selection of data science and engineering work.
+        <a href="https://github.com/abhioriganti" target="_blank">View all on GitHub <i class="fas fa-arrow-right ms-1"></i></a>
+      </p>
+    </div>
+    <div class="row g-4">
+
+      <!-- TravelGenie -->
+      <div class="col-md-6 col-lg-4">
+        <div class="project-card project-card--featured">
+      
+          <img src="img/TravelGenie.jpeg" class="project-img" alt="TravelGenie project preview">
+          
+          <h5 class="project-title">TravelGenie - AI-Powered Travel Planning Ecosystem</h5>
+          <p class="project-desc">
+            Benchmarked a distributed AI orchestration system (Claude + MCP) across Google Colab, AWS EC2,
+            and AWS ECS Fargate under 50–100 concurrent users. ECS achieved <strong>457 RPS</strong> with
+            <strong>50% fewer resources</strong> than EC2 (460 RPS), validating serverless containers
+            for scalable agentic AI.
+          </p>
+          <div class="project-tech">
+            <span>Claude AI</span><span>MCP</span><span>AWS ECS</span><span>AWS EC2</span><span>Slack Bot</span><span>Python</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SafeSim -->
+      <div class="col-md-6 col-lg-4">
+        <div class="project-card project-card--featured">
+          <img src="img/SafeSim.jpeg" class="project-img" alt="SafeSim project preview">
+         
+          <h5 class="project-title">SafeSim - Neuro-Symbolic Medical Text Simplification</h5>
+          <p class="project-desc">
+            Designed a closed-loop neuro-symbolic pipeline combining LLM fluency with deterministic
+            entity verification. Achieved <strong>100% preservation</strong> of critical medical entities
+            (dosages, vitals) across 300 texts vs ~99.7% for pure neural baselines (BART, T5).
+          </p>
+          <div class="project-tech">
+            <span>LLMs</span><span>BART</span><span>T5</span><span>SpaCy</span><span>NLP</span><span>Python</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deepfake Detection -->
+      <div class="col-md-6 col-lg-4">
+        <div class="project-card project-card--featured">
+          <img src="img/Deepfake.jpg" class="project-img" alt="Deepfake Detection project preview">
+          <div class="project-featured-badge"><i class="fas fa-trophy me-1"></i>Best Paper Award</div>
+          <h5 class="project-title">Efficient Deep Fake Image Detection Using Dense CNN Architecture</h5>
+          <p class="project-desc">
+            Developed a binary deepfake image classifier using a <strong>Dense CNN architecture</strong> with data augmentation and dropout regularization. Leveraged <strong>TensorFlow</strong> and <strong>OpenCV</strong> for preprocessing and feature extraction, trained across 5 diverse datasets achieving <strong>97% accuracy</strong> on unseen data. Published at IRCCTSD 2024.
+          </p>
+          <div class="project-tech">
+            <span>Keras</span><span>OpenCV</span><span>CNN</span><span>Deep Learning</span>
+          </div>
+          <a href="https://link.springer.com/chapter/10.1007/978-3-031-82383-1_5" target="_blank" class="project-link">
+            <i class="fas fa-external-link-alt me-1"></i>View Publication
+          </a>
+        </div>
+      </div>
+
+      <!-- Bitcoin Pipeline -->
+      <div class="col-md-6 col-lg-4">
+        <div class="project-card">
+          <img src="img/Bitcoin.jpg" class="project-img" alt="Bitcoin Pipeline project preview">
+          <h5 class="project-title">Real-Time Bitcoin Data Pipeline &amp; Power BI Dashboard</h5>
+          <p class="project-desc">
+            Built a real-time Bitcoin monitoring system using <strong>Python</strong> and <strong>CoinGecko API</strong> with automated data ingestion via <strong>Power Query</strong>. Delivered an interactive <strong>Power BI</strong> dashboard featuring 7/30/90-day moving averages, volatility metrics, and time series forecasting with scheduled auto-refresh.
+          </p>
+          <div class="project-tech">
+            <span>Python</span><span>Power BI</span><span>Pandas</span><span>Time Series</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- EV Trends -->
+      <div class="col-md-6 col-lg-4">
+        <div class="project-card">
+          <img src="img/EV.png" class="project-img" alt="EV Trends project preview">
+          <h5 class="project-title">Predicting EV Trends &amp; Charging Infrastructure</h5>
+          <p class="project-desc">
+            Analyzed EV adoption patterns using <strong>GeoPandas</strong> and <strong>Scikit-learn</strong> to map infrastructure gaps across Washington state. Built <strong>Random Forest</strong> and Logistic Regression models achieving <strong>98.42% CAFV eligibility accuracy</strong> and R²=0.918 for electric range prediction.
+          </p>
+          <div class="project-tech">
+            <span>Scikit-learn</span><span>GeoPandas</span><span>Seaborn</span><span>ML</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SQL Retail -->
+      <div class="col-md-6 col-lg-4">
+        <div class="project-card">
+          <img src="img/SQL.png" class="project-img" alt="SQL Retail project preview">
+          <h5 class="project-title">Retail Data Analysis with SQL</h5>
+          <p class="project-desc">
+            Performed end-to-end retail analytics on real-world e-commerce data using <strong>MySQL</strong> covering complex multi-table joins, window functions, aggregations, and customer segmentation to surface actionable sales and product performance insights.
+          </p>
+          <div class="project-tech">
+            <span>SQL</span><span>MySQL</span><span>Data Analysis</span><span>ETL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Snowflake -->
+      <div class="col-md-6 col-lg-4">
+        <div class="project-card">
+          <img src="img/Snowflake.jpg" class="project-img" alt="Snowflake Pipeline project preview">
+          <h5 class="project-title">End-to-End Data Pipeline with Snowflake</h5>
+          <p class="project-desc">
+            Architected a production-grade ETL pipeline on <strong>Snowflake</strong> following the <strong>Medallion architecture</strong> (Bronze → Silver → Gold). Implemented data quality checks, schema evolution, and query optimization using <strong>SQL</strong> and Snowflake-native features for scalable analytics.
+          </p>
+          <div class="project-tech">
+            <span>Snowflake</span><span>SQL</span><span>Data Engineering</span><span>ETL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Databricks -->
+      <div class="col-md-6 col-lg-4">
+        <div class="project-card">
+          <img src="img/Databricks.png" class="project-img" alt="Databricks Pipeline project preview">
+          <h5 class="project-title">Scalable Pipelines with Databricks</h5>
+          <p class="project-desc">
+            Designed a scalable data lake pipeline on <strong>Databricks</strong> using <strong>Apache Spark</strong> and <strong>Delta Lake</strong> with Medallion architecture. Performed large-scale transformations via <strong>Spark SQL</strong>, enabling reliable, versioned, and query-optimized data for downstream analytics workloads.
+          </p>
+          <div class="project-tech">
+            <span>Databricks</span><span>Apache Spark</span><span>Spark SQL</span><span>Delta Lake</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== SKILLS ===================== -->
+<section id="skills" class="section-light">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 class="section-title">Skills</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-code"></i>
+            <h6>Programming Languages</h6>
+          </div>
+          <div class="skill-badges">
+            <span class="badge-skill"><img src="img/python.png" class="badge-skill-logo" alt="">Python</span>
+            <span class="badge-skill"><img src="img/SQL_Logo.png" class="badge-skill-logo" alt="">SQL</span>
+            <span class="badge-skill"><img src="img/R.png" class="badge-skill-logo" alt="">R</span>
+            <span class="badge-skill"><img src="img/Bash.png" class="badge-skill-logo" alt="">Bash</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-robot"></i>
+            <h6>Machine Learning &amp; AI</h6>
+          </div>
+          <div class="skill-badges">
+            <span class="badge-skill"><img src="img/Scikit_learn.jpg" class="badge-skill-logo" alt="">Scikit-learn</span>
+            <span class="badge-skill"><img src="img/TensorFlow.png" class="badge-skill-logo" alt="">TensorFlow</span>
+            <span class="badge-skill"><img src="img/pytorch.png" class="badge-skill-logo" alt="">PyTorch</span>
+            <span class="badge-skill"><img src="img/Keras.png" class="badge-skill-logo" alt="">Keras</span>
+            <span class="badge-skill"><img src="img/XGBoost.png" class="badge-skill-logo" alt="">XGBoost</span>
+            <span class="badge-skill"><img src="img/Spacy.png" class="badge-skill-logo" alt="">SpaCy / NLP</span>
+            <span class="badge-skill"><img src="img/AB Testing.jpg" class="badge-skill-logo" alt="">A/B Testing</span>
+            <span class="badge-skill"><img src="img/huggingface.png" class="badge-skill-logo" alt="">Hugging Face</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-chart-bar"></i>
+            <h6>Data Visualization</h6>
+          </div>
+          <div class="skill-badges">
+            <span class="badge-skill"><img src="img/Matplotlib.png" class="badge-skill-logo" alt="">Matplotlib</span>
+            <span class="badge-skill"><img src="img/Seaborn.png" class="badge-skill-logo" alt="">Seaborn</span>
+            <span class="badge-skill"><img src="img/Tableau.png" class="badge-skill-logo" alt="">Tableau</span>
+            <span class="badge-skill"><img src="img/Power_BI.png" class="badge-skill-logo" alt="">Power BI</span>
+            <span class="badge-skill"><img src="img/Microsoft_Office_Excel.png" class="badge-skill-logo" alt="">Excel</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-cloud"></i>
+            <h6>Big Data &amp; Cloud</h6>
+          </div>
+          <div class="skill-badges">
+            <span class="badge-skill"><img src="img/AWS.png" class="badge-skill-logo" alt="">Amazon Web Services (AWS)</span>
+            <span class="badge-skill"><img src="img/Apache-Spark.png" class="badge-skill-logo" alt="">Apache Spark</span>
+            <span class="badge-skill"><img src="img/ELT_ETL.png" class="badge-skill-logo" alt="">ETL/ELT Pipelines</span>
+            <span class="badge-skill"><img src="img/snowflake_logo.png" class="badge-skill-logo" alt="">Snowflake</span>
+            <span class="badge-skill"><img src="img/Hadoop.png" class="badge-skill-logo" alt="">Hadoop</span>
+            <span class="badge-skill"><img src="img/Docker.png" class="badge-skill-logo" alt="">Docker</span>
+            <span class="badge-skill"><img src="img/apache-airflow.png" class="badge-skill-logo" alt="">Apache Airflow</span>
+            <span class="badge-skill"><img src="img/Databricks_Logo.png" class="badge-skill-logo" alt="">Databricks</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-server"></i>
+            <h6>Databases</h6>
+          </div>
+          <div class="skill-badges">
+            <span class="badge-skill"><img src="img/MySQL.png" class="badge-skill-logo" alt="">MySQL</span>
+            <span class="badge-skill"><img src="img/Postgresql.png" class="badge-skill-logo" alt="">PostgreSQL</span>
+            <span class="badge-skill"><img src="img/mongodb.png" class="badge-skill-logo" alt="">MongoDB</span>
+            <span class="badge-skill"><img src="img/SQLite.png" class="badge-skill-logo" alt="">SQLite</span>
+            <span class="badge-skill"><img src="img/no-sql.png" class="badge-skill-logo" alt="">NoSQL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-tools"></i>
+            <h6>Other Skills</h6>
+          </div>
+          <div class="skill-badges">
+            <span class="badge-skill"><img src="img/GitHub.png" class="badge-skill-logo" alt="">Git / GitHub</span>
+            <span class="badge-skill"><img src="img/Flask.png" class="badge-skill-logo" alt="">Flask / FastAPI</span>
+            <span class="badge-skill"><img src="img/time-series-analysis.jpg" class="badge-skill-logo" alt="">Time Series Analysis</span>
+            <span class="badge-skill"><img src="img/MLOps.jpg" class="badge-skill-logo" alt="">MLOps</span>
+            <span class="badge-skill"><img src="img/geospatial-analysis.png" class="badge-skill-logo" alt="">Geospatial Analysis</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== EXPERIENCE ===================== -->
+<section id="experience" class="section-white">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 class="section-title">Professional Experience</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="timeline">
+
+
+      <!-- UMD Counseling Center -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="exp-header">
+            <div>
+              <h5 class="exp-company">UMD Counseling Center</h5>
+              <p class="exp-role"><i class="fas fa-briefcase me-1"></i>Graduate Student Data Analyst · College Park, MD</p>
+            </div>
+            <span class="exp-date">Sep 2024 – Present</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Processed and standardized <strong>5,000+ student records</strong> using Python and SQL under FERPA compliance guidelines, translating raw institutional data into concise executive reports that directly informed leadership decisions.</li>
+            <li>Restructured preprocessing workflows to reduce manual effort by <strong>30%</strong>, and refined SQL queries iteratively until data accuracy reached <strong>96.5%</strong> a benchmark the team could confidently cite across all reporting cycles.</li>
+            <li>Oversaw a team of <strong>4 student analysts</strong> while building Tableau dashboards for near-real-time outcome monitoring, cutting reporting errors by <strong>20%</strong> and giving student support programs a sharper foundation for decision-making.</li>
+          </ul>
+          <div class="exp-tech">
+            <span>Python</span><span>MySQL</span><span>Tableau</span><span>Pandas</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interlinked Corp -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="exp-header">
+            <div>
+              <h5 class="exp-company">Interlinked Corp</h5>
+              <p class="exp-role"><i class="fas fa-briefcase me-1"></i>Data Engineer Intern · Remote</p>
+            </div>
+            <span class="exp-date">May 2025 – Sep 2025</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Architected ELT pipelines to handle <strong>more than 2 million daily events</strong> using Airflow, Docker, and SQL, incorporating time-series features for forecasting and anomaly detection that pushed real-time throughput up by <strong>40%</strong>.</li>
+            <li>Consolidated real-time weather, satellite, and sensor feeds into Python ETL workflows, then translated those outputs into geospatial risk maps via GeoPandas, Folium, and QGIS for wildfire analysis teams.</li>
+            <li>Introduced automated data quality checks and an offline evaluation harness for model validation, raising pipeline throughput by <strong>50%</strong> while holding offline accuracy steady at <strong>95%</strong> across production runs.</li>
+          </ul>
+          <div class="exp-tech">
+            <span>Python</span><span>Apache Airflow</span><span>PostgreSQL</span><span>GeoPandas</span><span>Docker</span>
+          </div>
+        </div>
+      </div>
+
+    
+
+      <!-- The Coding School -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="exp-header">
+            <div>
+              <h5 class="exp-company">The Coding School</h5>
+              <p class="exp-role"><i class="fas fa-chalkboard-teacher me-1"></i>Teaching Assistant · Data Science Research Program</p>
+            </div>
+            <span class="exp-date">Jun 2025 – Aug 2025</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Supported <strong>20+ high school students</strong> through end-to-end data science research in Python, Scikit-learn, and TensorFlow, accompanying them from initial EDA through model evaluation and final presentations.</li>
+            <li>Wove Git/GitHub into the core curriculum and walked students through regression, classification, and clustering workflows, contributing to a <strong>15%</strong> improvement in overall project quality by the end of the program.</li>
+            <li>Facilitated workshops on experiment design and error analysis, and ran mock client reviews modelled on consulting practice - helping students articulate their methodology with clarity and professional confidence.</li>
+          </ul>
+          <div class="exp-tech">
+            <span>Python</span><span>Scikit-learn</span><span>TensorFlow</span><span>Jupyter</span><span>Git</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Open Weaver -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="exp-header">
+            <div>
+              <h5 class="exp-company">Open Weaver</h5>
+              <p class="exp-role"><i class="fas fa-briefcase me-1"></i>Generative AI Intern · Chennai, India</p>
+            </div>
+            <span class="exp-date">Jul 2023 – Sep 2023 </span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Conceived and delivered a voice-to-image generator using GANs and CLIP in TensorFlow, achieving <strong>95% accuracy</strong> in mapping voice inputs to visual outputs across large and varied test datasets.</li>
+            <li>Reduced model training time by <strong>30%</strong> through targeted hyperparameter tuning, regularization strategies, and GPU acceleration preserving 98% accuracy and cross-dataset scalability throughout.</li>
+            <li>Assembled large-scale training datasets via web scraping with Beautiful Soup and maintained SQL/MySQL databases to keep AI pipelines reproducible, well-documented, and accessible to the broader team.</li>
+          </ul>
+          <div class="exp-tech">
+            <span>GANs</span><span>CLIP</span><span>TensorFlow</span><span>Hugging Face</span><span>Power BI</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- GANfinity.AI -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="exp-header">
+            <div>
+              <h5 class="exp-company">GANfinity.AI</h5>
+              <p class="exp-role"><i class="fas fa-briefcase me-1"></i>Data Analyst · Remote, India</p>
+            </div>
+            <span class="exp-date">Dec 2022 - Jun 2023</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Developed and deployed an AI-enabled Fintech B2B cloud application with ML-powered financial risk prediction, embedding anomaly detection models that elevated fraud detection capabilities by <strong>90%</strong>.</li>
+            <li>Evaluated Gradient Boosting, XGBoost, and Random Forest classifiers against one another, then applied A/B testing on transaction flows to identify which approaches meaningfully improved conversion outcomes.</li>
+            <li>Revamped SQL-based ETL processes for centralized data management, tightening ingestion and transformation logic so downstream analytics teams consistently had clean, reliable data at their disposal.</li>
+          </ul>
+          <div class="exp-tech">
+            <span>XGBoost</span><span>Random Forest</span><span>SQL</span><span>Tableau</span><span>Python</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ===================== PUBLICATIONS ===================== -->
+<section id="publications" class="section-dark">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 class="section-title">Publications</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="pub-card">
+          <div class="pub-badge"><i class="fas fa-award me-2"></i>Best Paper Award</div>
+          <h4 class="pub-title">Efficient Deep Fake Image Detection Using Dense CNN Architecture</h4>
+          <p class="pub-venue">
+            <i class="fas fa-university me-2"></i>
+            <strong>International Research Conference on Computing Technologies for Sustainable Development</strong> (IRCCTSD 2024)<br>
+            <span class="pub-series">Communications in Computer and Information Science, vol 2361. Springer, Cham.</span>
+          </p>
+          <p class="pub-abstract">
+            Deepfakes innovative manipulations of digital visual content using deep learning methods have emerged as a significant threat, raising concerns about misinformation and privacy violations. Their influence spans social media, political discourse, and beyond, highlighting the urgent need for robust detection tools. This research addresses the deepfake threat through a thorough examination of binary classification techniques. Focused on distinguishing genuine from manipulated images, the study leverages diverse datasets to train and evaluate methods utilizing Convolutional Neural Networks (CNNs) with emphasis on spatial feature extraction. Experimental results demonstrate the model's effectiveness in detecting manipulated images across various scenarios, achieving <strong>97% accuracy</strong> on unseen data.
+          </p>
+          <div class="pub-footer">
+            <span class="pub-doi"><i class="fas fa-link me-1"></i>DOI: 10.1007/978-3-031-82383-1_5</span>
+            <a href="https://link.springer.com/chapter/10.1007/978-3-031-82383-1_5" target="_blank" class="btn btn-primary btn-sm pub-btn">
+              <i class="fas fa-external-link-alt me-2"></i>View on Springer
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== CERTIFICATIONS ===================== -->
+<section id="certifications" class="section-light">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 class="section-title">Certifications &amp; Awards</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <!-- Certifications -->
+    <div class="row g-3">
+      <div class="col-md-6">
+        <a href="https://www.linkedin.com/redir/redirect/?url=https%3A%2F%2Fwww.credly.com%2Fbadges%2F5c0202db-b71d-4b55-b3c9-914995b71cd4%2Flinked_in_profile&urlhash=sVJD&isSdui=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BET8IO4AQSAOd5BIxjzHhtA%3D%3D" target="_blank" class="cert-card">
+          <div class="cert-icon"><img src="img/AWS_SA.png" class="cert-icon-img" alt="AWS Certified Solutions Architect"></div>
+          <div class="cert-info">
+            <h6>AWS Certified Solutions Architect – Associate</h6>
+            <p>Amazon Web Srvices(AWS)</p>
+          </div>
+          <i class="fas fa-external-link-alt cert-arrow"></i>
+        </a>
+      </div>
+      <div class="col-md-6">
+        <a href="https://drive.google.com/file/d/1kaZAO_DbZ-6hPbTGxkG9WtvOo6tsrxtd/view" target="_blank" class="cert-card">
+          <div class="cert-icon"><img src="img/Oracle.png" class="cert-icon-img" alt="Oracle Database Foundations"></div>
+          <div class="cert-info">
+            <h6>Oracle Database Foundations</h6>
+            <p>Oracle</p>
+          </div>
+          <i class="fas fa-external-link-alt cert-arrow"></i>
+        </a>
+      </div>
+      <div class="col-md-6">
+        <a href="https://learn.mongodb.com/c/FMRPDwAiSJ2G63UIXxFLuw" target="_blank" class="cert-card">
+          <div class="cert-icon"><img src="img/mongodb.png" class="cert-icon-img" alt="MongoDB Basics"></div>
+          <div class="cert-info">
+            <h6>MongoDB Basics</h6>
+            <p>MongoDB University</p>
+          </div>
+          <i class="fas fa-external-link-alt cert-arrow"></i>
+        </a>
+      </div>
+      <div class="col-md-6">
+        <a href="https://www.coursera.org/account/accomplishments/certificate/KZBW2JJNDAQJ" target="_blank" class="cert-card">
+          <div class="cert-icon"><img src="img/deeplearnig.jpg" class="cert-icon-img" alt="Neural Networks and Deep Learning"></div>
+          <div class="cert-info">
+            <h6>Neural Networks and Deep Learning</h6>
+            <p>DeepLearning.AI · Coursera</p>
+          </div>
+          <i class="fas fa-external-link-alt cert-arrow"></i>
+        </a>
+      </div>
+      <div class="col-md-6">
+        <a href="https://coursera.org/share/03856bba68abb53ba8983d940125980d" target="_blank" class="cert-card">
+          <div class="cert-icon"><img src="img/deeplearnig.jpg" class="cert-icon-img" alt="AI For Everyone"></div>
+          <div class="cert-info">
+            <h6>AI For Everyone</h6>
+            <p>DeepLearning.AI · Coursera</p>
+          </div>
+          <i class="fas fa-external-link-alt cert-arrow"></i>
+        </a>
+      </div>
+      <div class="col-md-6">
+        <a href="https://coursera.org/share/5c199dc3343e0db2afcb50ff512a2038" target="_blank" class="cert-card">
+          <div class="cert-icon"><img src="img/IBM.png" class="cert-icon-img" alt="Machine Learning Introduction for Everyone"></div>
+          <div class="cert-info">
+            <h6>Machine Learning Introduction for Everyone</h6>
+            <p>IBM · Coursera</p>
+          </div>
+          <i class="fas fa-external-link-alt cert-arrow"></i>
+        </a>
+      </div>
+      <div class="col-md-6">
+        <a href="https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL22CS97S1327129409033642" target="_blank" class="cert-card">
+          <div class="cert-icon"><img src="img/Nptel.png" class="cert-icon-img" alt="Introduction to Machine Learning"></div>
+          <div class="cert-info">
+            <h6>Introduction to Machine Learning</h6>
+            <p>NPTEL · IIT Kharagpur</p>
+          </div>
+          <i class="fas fa-external-link-alt cert-arrow"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Awards -->
+    <div class="awards-section">
+      <h4 class="awards-title">Awards &amp; Recognition</h4>
+      <div class="row g-3 mt-2">
+        <div class="col-md-6">
+          <div class="award-card">
+            <div class="award-icon"><i class="fas fa-trophy"></i></div>
+            <div>
+              <h6>Best Paper Award · ICCTSD-2024</h6>
+              <p>"Efficient Deepfake Image Detection Using Dense CNN Architecture"</p>
+              <div class="d-flex gap-2 mt-2 flex-wrap">
+                <a href="https://www.linkedin.com/in/abhishek-rithik-origanti/details/honors/" target="_blank" class="award-link">
+                  <i class="fas fa-certificate me-1"></i>Certificate
+                </a>
+                <a href="https://link.springer.com/chapter/10.1007/978-3-031-82383-1_5" target="_blank" class="award-link">
+                  <i class="fas fa-book-open me-1"></i>Publication
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="award-card">
+            <div class="award-icon"><i class="fas fa-medal"></i></div>
+            <div>
+              <h6>Top 10 · Proglint CV Hackathon 2023</h6>
+              <p>Ranked in the top 10 out of 2,500 participants in Proglint's Alliance University Computer Vision Hackathon.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===================== RESUME CTA ===================== -->
+<section id="resume" class="section-accent">
+  <div class="container text-center py-2">
+    <h2 class="text-white mb-3">Want to Know More?</h2>
+    <p class="text-white-soft mb-4 mx-auto" style="max-width:500px;">
+      Download my full resume to see my complete experience, skills, and qualifications.
+    </p>
+    <a href="img/Abhishek Rithik Origanti - Resume.pdf" target="_blank" class="btn btn-resume-cta btn-lg">
+      <i class="fas fa-download me-2"></i>Download Resume
+    </a>
+  </div>
+</section>
+
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact" class="section-white">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle">I'm always open to interesting conversations, collaborations, or new opportunities.</p>
+    </div>
+    <div class="row justify-content-center g-4">
+      <div class="col-md-4">
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <h6>Email</h6>
+          <a href="mailto:origanti@umd.edu">origanti@umd.edu</a>
+          <a href="mailto:abhishekoriganti@umd.edu">abhishekoriganti@gmail.com</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+          <h6>LinkedIn</h6>
+          <a href="https://www.linkedin.com/in/abhishek-rithik-origanti/" target="_blank">abhishek-rithik-origanti</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fab fa-github"></i></div>
+          <h6>GitHub</h6>
+          <a href="https://github.com/abhioriganti" target="_blank">abhioriganti</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container text-center">
+    <div class="footer-social mb-3">
+      <a href="https://github.com/abhioriganti" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/abhishek-rithik-origanti/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:origanti@umd.edu"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p class="footer-name">Abhishek Rithik Origanti</p>
+    <p class="footer-sub">Data Scientist · University of Maryland</p>
+  </div>
+</footer>
+
+
+<!-- Bootstrap 5 JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script>
+  // Navbar shadow on scroll
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 60) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if (href === '#') return;
+      const target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        const offset = 75;
+        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top, behavior: 'smooth' });
+        // Close mobile nav
+        const collapse = document.getElementById('navbarNav');
+        if (collapse && collapse.classList.contains('show')) {
+          bootstrap.Collapse.getInstance(collapse)?.hide();
+        }
+      }
+    });
+  });
+
+  // Active nav highlight on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.navbar-nav .nav-link[href^="#"]');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(sec => {
+      if (window.scrollY >= sec.offsetTop - 120) {
+        current = sec.getAttribute('id');
+      }
+    });
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
+    });
+  });
+
+  // ── Dark / Light Theme Toggle ────────────────────────────────────────
+  (function() {
+    const toggle = document.getElementById('themeToggle');
+    const icon   = document.getElementById('themeIcon');
+    const html   = document.documentElement;
+
+    // Read saved preference, default to light
+    const saved = localStorage.getItem('portfolioTheme') || 'light';
+
+    function applyTheme(theme) {
+      html.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        icon.className = 'fas fa-sun';
+        toggle.title   = 'Switch to light mode';
+      } else {
+        icon.className = 'fas fa-moon';
+        toggle.title   = 'Switch to dark mode';
+      }
+      localStorage.setItem('portfolioTheme', theme);
+    }
+
+    applyTheme(saved);
+
+    toggle.addEventListener('click', function() {
+      const current = html.getAttribute('data-theme') || 'light';
+      applyTheme(current === 'dark' ? 'light' : 'dark');
+    });
+  })();
+  // ── End Theme Toggle ─────────────────────────────────────────────────
+
+  // ── Neural Network / Data Science Canvas ───────────────────────────
+  (function() {
+    const canvas = document.getElementById('heroCanvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+
+    const COLORS = {
+      nodeA:   'rgba(99, 102, 241, ',   // indigo
+      nodeB:   'rgba(14, 165, 233, ',   // sky blue
+      nodeC:   'rgba(139, 92, 246, ',   // violet
+      lineA:   'rgba(99, 102, 241, ',
+      lineB:   'rgba(14, 165, 233, ',
+    };
+
+    let W = 0, H = 0;
+    let nodes = [];
+    let mouse = { x: -9999, y: -9999 };
+    let animId;
+
+    function resize() {
+      const section = canvas.parentElement;
+      W = canvas.width  = section.offsetWidth;
+      H = canvas.height = section.offsetHeight;
+    }
+
+    function createNodes() {
+      nodes = [];
+      const count = Math.min(Math.floor((W * H) / 14000), 72);
+      for (let i = 0; i < count; i++) {
+        const tier = Math.random();                     // 0=small dim, 1=large bright
+        const bvx = (Math.random() - 0.5) * 0.35;
+        const bvy = (Math.random() - 0.5) * 0.35;
+        nodes.push({
+          x:  Math.random() * W,
+          y:  Math.random() * H,
+          vx: bvx,
+          vy: bvy,
+          bvx, bvy,
+          fx: 0, fy: 0,
+          r:  tier < 0.6 ? Math.random() * 1.8 + 0.8  // tiny nodes
+                         : Math.random() * 2.5 + 2.2,  // accent nodes
+          colorKey: Math.random() < 0.55 ? 'nodeA'
+                  : Math.random() < 0.6  ? 'nodeB'
+                  : 'nodeC',
+          alpha: tier < 0.6 ? Math.random() * 0.3 + 0.25
+                            : Math.random() * 0.2 + 0.55,
+          // "pulsing" layer marker — drawn with extra glow ring
+          hub: tier > 0.85 && Math.random() < 0.3,
+        });
+      }
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, W, H);
+
+      const MAX_DIST = Math.min(W, H) * 0.22;   // connection range scales with viewport
+
+      // ── Draw edges ──────────────────────────────────────────────────
+      for (let i = 0; i < nodes.length - 1; i++) {
+        for (let j = i + 1; j < nodes.length; j++) {
+          const dx = nodes[i].x - nodes[j].x;
+          const dy = nodes[i].y - nodes[j].y;
+          const d  = Math.sqrt(dx * dx + dy * dy);
+          if (d < MAX_DIST) {
+            const t = 1 - d / MAX_DIST;          // 0→1 as nodes get closer
+            const lineAlpha = t * t * 0.35;
+            const gradient = ctx.createLinearGradient(
+              nodes[i].x, nodes[i].y, nodes[j].x, nodes[j].y
+            );
+            gradient.addColorStop(0, COLORS.lineA + lineAlpha + ')');
+            gradient.addColorStop(1, COLORS.lineB + lineAlpha + ')');
+            ctx.beginPath();
+            ctx.moveTo(nodes[i].x, nodes[i].y);
+            ctx.lineTo(nodes[j].x, nodes[j].y);
+            ctx.strokeStyle = gradient;
+            ctx.lineWidth   = t * 1.4;
+            ctx.stroke();
+          }
+        }
+      }
+
+      // ── Draw nodes ──────────────────────────────────────────────────
+      const now = performance.now() / 1000;
+      nodes.forEach(n => {
+        // Soft glow ring for hub nodes
+        if (n.hub) {
+          const pulse = 0.5 + 0.5 * Math.sin(now * 1.8 + n.x);
+          const glow  = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, n.r * 5);
+          glow.addColorStop(0,   COLORS[n.colorKey] + (0.25 * pulse) + ')');
+          glow.addColorStop(0.5, COLORS[n.colorKey] + (0.10 * pulse) + ')');
+          glow.addColorStop(1,   COLORS[n.colorKey] + '0)');
+          ctx.beginPath();
+          ctx.arc(n.x, n.y, n.r * 5, 0, Math.PI * 2);
+          ctx.fillStyle = glow;
+          ctx.fill();
+        }
+
+        // Core dot
+        ctx.beginPath();
+        ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+        ctx.fillStyle = COLORS[n.colorKey] + n.alpha + ')';
+        ctx.fill();
+
+        // ── Cursor antigravity repulsion ────────────────────────────
+        const REPEL_RADIUS = 150;
+        const REPEL_FORCE  = 0.6;
+        const mdx = n.x - mouse.x;
+        const mdy = n.y - mouse.y;
+        const md  = Math.sqrt(mdx * mdx + mdy * mdy);
+        if (md < REPEL_RADIUS && md > 0.5) {
+          const strength = (1 - md / REPEL_RADIUS) * REPEL_FORCE;
+          n.fx += (mdx / md) * strength;
+          n.fy += (mdy / md) * strength;
+        }
+
+        // Decay extra force — nodes drift back to natural path
+        n.fx *= 0.88;
+        n.fy *= 0.88;
+
+        // Cap to prevent runaway at canvas edges
+        const fspeed = Math.sqrt(n.fx * n.fx + n.fy * n.fy);
+        if (fspeed > 4.5) { n.fx = (n.fx / fspeed) * 4.5; n.fy = (n.fy / fspeed) * 4.5; }
+
+        // Move (base drift + cursor push)
+        n.x += n.bvx + n.fx;
+        n.y += n.bvy + n.fy;
+        if (n.x < -20)      { n.x = W + 20; }
+        else if (n.x > W + 20) { n.x = -20;  }
+        if (n.y < -20)      { n.y = H + 20; }
+        else if (n.y > H + 20) { n.y = -20;  }
+      });
+
+      animId = requestAnimationFrame(draw);
+    }
+
+    // Boot
+    resize();
+    createNodes();
+    draw();
+
+    // ── Cursor tracking for antigravity effect ───────────────────────
+    // Canvas has pointer-events:none so we listen on the hero section instead
+    const heroSection = canvas.parentElement;
+    heroSection.addEventListener('mousemove', function(e) {
+      const rect = canvas.getBoundingClientRect();
+      mouse.x = e.clientX - rect.left;
+      mouse.y = e.clientY - rect.top;
+    });
+    heroSection.addEventListener('mouseleave', function() {
+      mouse.x = -9999;
+      mouse.y = -9999;
+    });
+
+    // Handle resize — debounced
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function() {
+        cancelAnimationFrame(animId);
+        resize();
+        createNodes();
+        draw();
+      }, 200);
+    });
+
+    // Pause when tab not visible (battery / CPU friendly)
+    document.addEventListener('visibilitychange', function() {
+      if (document.hidden) {
+        cancelAnimationFrame(animId);
+      } else {
+        draw();
+      }
+    });
+  })();
+  // ── End Canvas ──────────────────────────────────────────────────────
+
+  // Fade-in animation on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.project-card, .skill-category, .timeline-content, .info-card, .cert-card, .contact-card, .award-card').forEach(el => {
+    el.classList.add('fade-in-up');
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>
