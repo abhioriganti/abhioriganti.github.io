@@ -12,9 +12,9 @@
   --text:           #0F172A;
   --text-secondary: #475569;
   --text-light:     #94A3B8;
-  --bg-white:       #FBF0E6;
-  --bg-light:       #F5E3D3;
-  --bg-border:      #E8D5C0;
+  --bg-white:       #F2F2AC;
+  --bg-light:       #FCFCCF;
+  --bg-border:      #DFD786;
   --shadow-sm:      0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.05);
   --shadow-md:      0 4px 6px rgba(0,0,0,0.08), 0 12px 24px rgba(0,0,0,0.08);
   --radius:         14px;
@@ -64,7 +64,7 @@ a:hover { color: var(--primary-dark); }
    NAVBAR
    ====================================================== */
 #mainNav {
-  background: rgba(255, 255, 255, 0.96);
+  background: rgba(252, 252, 207, 0.96);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid transparent;
@@ -150,7 +150,7 @@ a:hover { color: var(--primary-dark); }
    ====================================================== */
 .hero-section {
   position: relative;
-  background: linear-gradient(145deg, #FBF0E6 0%, #EEF2FF 55%, #FBF0E6 100%);
+  background: linear-gradient(145deg, #F2F2AC 0%, #EEF2FF 55%, #F2F2AC 100%);
   padding: 20px 0 80px;
   overflow: hidden;
 }
